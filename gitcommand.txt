@@ -21,3 +21,5 @@ git push origin master แต่สำหรับการส่งไฟล์
 เช่น git merge, git checkout ,git branch , git diff, git blame 
 และอีกมากมายถ้าต้องการศึกษาเพิ่มเติม git — the simple guide เป็นคู่มืออย่างง่ายที่อยากจะแนะนำให้ไปอ่านกัน
 
+ใส่ Token
+git remote set-url origin https://<githubtoken>@github.com/<username>/<repositoryname>.git
