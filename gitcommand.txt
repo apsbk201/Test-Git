@@ -1,0 +1,23 @@
+git config --global user.name "NAME"
+git config --global user.email "EMAIL"
+
+git init
+
+หลังจากสร้าง Repository ใน Github แล้วก็จะทำการเชื่อมต่อระหว่าง Local กับ Github โดยใช้คำสั่ง git remote add origin server <server> 
+ณ ที่นี้ server คือ https://github.com/apsbk201/Test-Git.git
+
+git add <filename> หรือ git add *
+git commit -m “message here”
+
+git push origin master แต่สำหรับการส่งไฟล์ขึ้นครั้งแรกจะใช้ git push -u origin master 
+ระบบจะให้ใส่ Username, Password แต่ถ้าใช้งานบ่อยๆแล้วไม่อยากใส่ ต้องศึกษาเรื่อง ssh key
+
+สรุปคำสั่งในการใช้ Git (แบบไม่ซับซ้อน)
+1. git add <filename>, git add * (add all files) เพิ่มไฟล์เข้า index
+2. git commit -m “message” เขียนเพื่อบอกอัพเดทแต่ละที
+3. git push origin master อัพเดทกิ่ง master ใน Repository
+4. git pull origin master เพื่ออัพเดทข้อมูลใน local ให้เท่ากับใน Repository
+คำสั่งที่ใช้บ่อยที่สุดก็จะมีประมาณนี้ แต่ถ้าต้องการศึกษาเพิ่มเติมก็จะมีอีกหลายคำสั่งที่สำคัญๆ 
+เช่น git merge, git checkout ,git branch , git diff, git blame 
+และอีกมากมายถ้าต้องการศึกษาเพิ่มเติม git — the simple guide เป็นคู่มืออย่างง่ายที่อยากจะแนะนำให้ไปอ่านกัน
+
